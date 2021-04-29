@@ -1,0 +1,90 @@
+@import url("https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css");
+
+
+:root{
+    --primary-color:#5fbaa7
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  font-family: "Shabnam";
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  align-items: center;
+  padding: 20px;
+}
+
+h1{
+    color: var(--primary-color);
+}
+
+p{
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.btn{
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 4px 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+
+}
+
+.currency{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.currency select {
+    padding: 10px 20px ;
+    font-size: 16px;
+}
+
+
+.currency input{
+    
+    font-size: 30px;
+    text-align: right;
+    border: none;
+}
+
+.swap-rate-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rate{
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 0 10px;
+    direction: rtl;
+}
+
+select:focus ,button:focus ,input:focus{
+    outline: 0;
+}
+
+
+
+@media(max-width:600px){
+    .currency input{
+        width: 200px;
+    }
+}
